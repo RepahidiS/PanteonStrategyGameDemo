@@ -91,6 +91,8 @@ public class GridManager : MonoBehaviour
                 }
             }
         }
+
+        hoverNode = _nodes[0, 0];
     }
 
     // this method caching node neighbourhood to their "neighbours" list

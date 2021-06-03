@@ -38,6 +38,7 @@ public class BuildingManager : MonoBehaviour
 
             building.data = buildingData;
             building.producible = buildingData.producible;
+            building.SetSelectionHighLighter();
             newBuilding.SetActive(false);
             _buildingObjectPool.Add(building);
         }
@@ -98,6 +99,9 @@ public class BuildingManager : MonoBehaviour
     // this method is updating building info and producible info from given data
     public void SetCurrentInspectingBuilding(Building building, bool byClick = false)
     {
+        if(_inspectingBuilding != null)
+            _inspectingBuilding.Deselect();
+
         _inspectingBuilding = building;
 
         if(_inspectingBuilding == null)
@@ -107,6 +111,7 @@ public class BuildingManager : MonoBehaviour
         }
         else
         {
+            _inspectingBuilding.Select();
             buildingSelectedWithLastClick = byClick;
             gameManager.uiManager.uiInformation.Show(_inspectingBuilding);
             gameManager.producibleManager.DeselectPreviousSelectedProducibles();

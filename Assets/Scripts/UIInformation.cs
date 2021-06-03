@@ -47,7 +47,7 @@ public class UIInformation : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (building.data.canProduceUnit)
         {
             productionParent.SetActive(true);
-            txtProductionName.text = building.data.producible.strName;
+            txtProductionName.text = "Produce : " + building.data.producible.strName;
             imgProduction.sprite = building.data.producible.image;
 
             if (building.isPrimary)
