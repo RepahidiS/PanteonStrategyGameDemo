@@ -111,7 +111,7 @@ public class Player : MonoBehaviour
                 gameManager.buildingManager.SetCurrentInspectingBuilding(building);
             }
 
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
                 gameManager.SetMode(PlayModes.Play);
         }
         else if (gameManager.playMode == PlayModes.UpdateSpawnPoint) // player changing spawn point of a building
