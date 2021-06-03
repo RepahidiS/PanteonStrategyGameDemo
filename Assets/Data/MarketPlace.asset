@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bd28b5322fb9b45975bfe3067ddca6, type: 3}
+  m_Name: MarketPlace
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 6f2d1a09797f821409e82ca1fa9c7e30, type: 3}
+  prefab: {fileID: 3402093411754645639, guid: 9a5013fbbc1fd7f47bac2222570c482b, type: 3}
+  strName: Market Place
+  width: 12
+  height: 8
+  canProduceUnit: 0
+  producible: {fileID: 0}
+  secureSpawnWidth: 1
+  secureSpawnHeight: 1
+  unlocked: 0
+  buildToUnlock: {fileID: 11400000, guid: 4773185e4100c664a80142f89dd7bd96, type: 2}
+  objectPoolSize: 250

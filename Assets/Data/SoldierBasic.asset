@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e583d33adfcca2c47ba5c9edd205ae19, type: 3}
+  m_Name: SoldierBasic
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 19093d441ac6ceb4b8d39496a44291fe, type: 3}
+  prefab: {fileID: 5849525025133517301, guid: 06c5b007dc411e148b2953209cf469c4, type: 3}
+  strName: Soldier
+  movementSpeed: 2
+  width: 1
+  height: 1
+  unlocked: 0
+  buildToUnlock: {fileID: 11400000, guid: 67e015fab15f5ee49b98ac80803ee924, type: 2}
+  objectPoolSize: 2500
